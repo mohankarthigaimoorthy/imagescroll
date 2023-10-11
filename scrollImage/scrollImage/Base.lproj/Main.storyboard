@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="scrollImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image2" translatesAutoresizingMaskIntoConstraints="NO" id="KsN-oM-jBC">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nnb-M9-gGx">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="oa1-a4-Z1v">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <scrollView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="10" translatesAutoresizingMaskIntoConstraints="NO" id="hu9-l7-Szn">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="steve" translatesAutoresizingMaskIntoConstraints="NO" id="iix-Wo-x2L">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="iix-Wo-x2L" firstAttribute="height" secondItem="hu9-l7-Szn" secondAttribute="height" id="2uk-JX-zQz"/>
+                                    <constraint firstItem="iix-Wo-x2L" firstAttribute="width" secondItem="hu9-l7-Szn" secondAttribute="width" id="Vsi-BS-3YO"/>
+                                    <constraint firstItem="iix-Wo-x2L" firstAttribute="leading" secondItem="hu9-l7-Szn" secondAttribute="leading" id="qZl-YD-3XB"/>
+                                    <constraint firstAttribute="bottom" secondItem="iix-Wo-x2L" secondAttribute="bottom" id="ucq-0P-5Sg"/>
+                                    <constraint firstAttribute="trailing" secondItem="iix-Wo-x2L" secondAttribute="trailing" id="xri-K8-Jsj"/>
+                                    <constraint firstItem="iix-Wo-x2L" firstAttribute="top" secondItem="hu9-l7-Szn" secondAttribute="top" id="zT0-6R-f82"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KsN-oM-jBC" secondAttribute="trailing" id="3WX-UI-WqL"/>
+                            <constraint firstItem="hu9-l7-Szn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8UJ-z9-D5x"/>
+                            <constraint firstItem="KsN-oM-jBC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9fI-mC-MaY"/>
+                            <constraint firstItem="Nnb-M9-gGx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9uK-ji-JhS"/>
+                            <constraint firstItem="Nnb-M9-gGx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IwI-ij-3Kb"/>
+                            <constraint firstAttribute="bottom" secondItem="KsN-oM-jBC" secondAttribute="bottom" id="MPh-xr-576"/>
+                            <constraint firstItem="hu9-l7-Szn" firstAttribute="leading" secondItem="Nnb-M9-gGx" secondAttribute="leading" id="Mzz-CU-npt"/>
+                            <constraint firstItem="hu9-l7-Szn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Tc2-wS-3Pl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hu9-l7-Szn" secondAttribute="trailing" id="VJP-NZ-9Uu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nnb-M9-gGx" secondAttribute="trailing" id="cZy-K3-y98"/>
+                            <constraint firstItem="KsN-oM-jBC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hXG-F1-ECJ"/>
+                            <constraint firstAttribute="bottom" secondItem="Nnb-M9-gGx" secondAttribute="bottom" id="sri-K6-4o7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hu9-l7-Szn" secondAttribute="bottom" id="udL-Tr-r7Q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageScroll" destination="hu9-l7-Szn" id="ng1-I2-BvW"/>
+                        <outlet property="zoomImage" destination="iix-Wo-x2L" id="y7B-33-RSc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.04347826086958" y="-27.455357142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image2" width="175.66667175292969" height="175.66667175292969"/>
+        <image name="steve" width="320" height="320"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
